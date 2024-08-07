@@ -30,7 +30,7 @@ class MyUser {
     );
   }
 
-  static MyUser fromEntiy (MyuserEntity entity) {
+  static MyUser fromEntity (MyuserEntity entity) {
     return MyUser(
       userId: entity.userId,
       email: entity.email,
