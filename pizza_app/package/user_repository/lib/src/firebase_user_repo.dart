@@ -23,7 +23,7 @@ class FirebaseUserRepo implements UserRepository{
         yield await usersCollection
         .doc(firebaseUser.uid)
         .get()
-        .then((value) => MyUser.fromEntity(MyuserEntity.fromDocument(value.data()!)));
+        .then((value) => MyUser.fromEntity(MyUserEntity.fromDocument(value.data()!)));
       }
     });
   }

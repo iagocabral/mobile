@@ -21,8 +21,8 @@ class MyUser {
     hasActiveCart: false,
   );
 
-  MyuserEntity toEntity() {
-    return MyuserEntity(
+  MyUserEntity toEntity() {
+    return MyUserEntity(
       userId: userId,
       email: email,
       name: name,
@@ -30,7 +30,7 @@ class MyUser {
     );
   }
 
-  static MyUser fromEntity (MyuserEntity entity) {
+  static MyUser fromEntity (MyUserEntity entity) {
     return MyUser(
       userId: entity.userId,
       email: entity.email,
