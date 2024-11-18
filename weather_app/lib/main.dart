@@ -19,6 +19,11 @@ class MyApp extends StatelessWidget {
       title: 'Aplicativo de Clima',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.orangeAccent),
+        textTheme: TextTheme(
+          bodyLarge: TextStyle(fontSize: 18.0),
+          headlineSmall: TextStyle(fontSize: 24.0),
+        ),
       ),
       home: WeatherHomePage(apiClient: apiClient),
     );

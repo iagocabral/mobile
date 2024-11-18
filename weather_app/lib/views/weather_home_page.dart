@@ -24,8 +24,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
       _isLoading = true;
     });
     try {
-      final weather =
-          await widget.apiClient.getWeather(_cityController.text.trim());
+      final weather = await widget.apiClient.getWeather(_cityController.text.trim());
       setState(() {
         _weather = weather;
         _isLoading = false;
