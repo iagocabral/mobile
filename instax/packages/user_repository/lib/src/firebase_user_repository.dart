@@ -75,7 +75,7 @@ class FirebaseUserRepository implements UserRepository {
   }
   
   @override
-  Future<MyUser> getUserData(String myUserId) async {
+  Future<MyUser> getMyUser(String myUserId) async {
     try {
       return usersCollection.doc(myUserId).get().then((value) =>
         MyUser.fromEntity(MyUserEntity.fromDocument(value.data()!))
